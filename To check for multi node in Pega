@@ -1,0 +1,11 @@
+1.	Agents running on single node.
+2.	Integration connectivity.
+3.	SSO Authentication for user login.
+4.	Work object data sync when load balancer switches user from one node to another.
+5.	Requestor passivation – if a passivated requestor can be reactivated from another node
+6.	Node level data pages are reloading in both the nodes correctly
+7.	Log out of users – does it close the sessions when done from either of the nodes
+8.	Search functionality with indexing is working only on one node
+9.	Email trigger functionality (connection to SMTP servers are working fine) 
+10.	Additional tests as mentioned in the attached mail from CLAWS
+11.	SMA setup

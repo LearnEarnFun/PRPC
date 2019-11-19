@@ -7,11 +7,11 @@
     $(document).on('keyup',function(evt) {
     if (evt.keyCode == 27) {
       //alert("escape event called");
-pega.ui.Doc.prototype.handleModaldlgKeyPress(evt);
+HandleModaldialogEscapeKeyPress(evt);
     }
 });
     
-  pega.ui.Doc.prototype.handleModaldlgKeyPress = function(event){
+  HandleModaldialogEscapeKeyPress = function(event){
     if(pega.u.d.bModalDialogOpen){
         var modaldialog = pega.u.d.modalDialog.innerElement;
         var srcObj = pega.util.Event.getTarget(event);

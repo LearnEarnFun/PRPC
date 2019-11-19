@@ -1,0 +1,38 @@
+// Code to invoke escape key. place this in user workform. only works where there is a container close button. function
+
+  // pega.ui.Doc.prototype.handleModaldlgKeyPress present in pega_ui_modaldialog javascript
+
+<script>
+    
+    $(document).on('keyup',function(evt) {
+    if (evt.keyCode == 27) {
+      //alert("escape event called");
+pega.ui.Doc.prototype.handleModaldlgKeyPress(evt);
+    }
+});
+    
+  pega.ui.Doc.prototype.handleModaldlgKeyPress = function(event){
+    if(pega.u.d.bModalDialogOpen){
+        var modaldialog = pega.u.d.modalDialog.innerElement;
+        var srcObj = pega.util.Event.getTarget(event);
+        var elemTagName = srcObj.tagName.toUpperCase();
+        switch (event.keyCode) {
+        
+        case 27: /* If the ESC key is pressed */
+            var buttonObj = pega.util.Dom.getElementsById("container_close",modaldialog);
+            if(buttonObj && buttonObj.length > 0){
+                pega.util.Event.fireEvent(buttonObj[0],'click');
+                pega.util.Event.stopPropagation(event);
+                pega.util.Event.preventDefault(event);
+            }
+            break;
+        
+        
+        }
+    }
+};
+
+
+
+
+</script>

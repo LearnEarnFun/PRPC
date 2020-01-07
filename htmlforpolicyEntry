@@ -9,6 +9,8 @@
     margin-left: 10%;
 ">
     
+	<svg height="50%" version="1.1" width="50	%" xmlns="http://www.w3.org/2000/svg" id="raphael-paper-3" style="overflow: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; cursor: default; vertical-align: middle; position: relative; background-color: rgb(255, 255, 255);" viewBox="0 0 700 381">
+	
 <div class="" style="
     width: 50%;
 ">
@@ -74,8 +76,48 @@
 	 genGraph();
 	 });
    
-     function genGraph(){
-		alert("hello world gen graph");
+     function genGraph()
+	 {
+	 
+		alert("hello world gen graph");	
+		var table = $("table tbody");
+
+		var policytable = new Array ();
+		/*for (var i=0; i<10 ;i++)
+		{
+			policytable[i] = [];
+		}*/
+	
+    table.find('tr').each(function (i) 
+	{
+        var $tds = $(this).find('td'),
+            name = $tds.eq(0).text(),
+            towernum = $tds.eq(1).text(),
+            limit = $tds.eq(2).text();
+			ap = $tds.eq(3).text();
+        
+        alert('row number ' + (i + 1) + '\Name: ' + name
+              + '\towernum: ' + towernum
+              + '\limit: ' + limit);
+	
+		policytable.push([name,towernum]);
+	
+	}
+	);
+	
+	
+		policytable.sort(sortFunction1);
+
+		function sortFunction1(a, b) {
+			if (a[0] === b[0]) {
+				return 0;
+			}
+			else {
+				return (a[0] < b[0]) ? -1 : 1;
+			}
+		}
+	
+	
 	 }
 	 
     $("form").submit(function(e){

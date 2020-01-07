@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>My first chart using FusionCharts Suite XT</title>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+	<script type="text/javascript">
+		FusionCharts.ready(function(){
+			var chartObj = new FusionCharts({
+    type: 'pie2d',
+    renderAt: 'chart-container',
+    width: '550',
+    height: '350',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Split of revenue by product categories",
+            "subCaption": "Last year",
+            "numberPrefix": "$",
+            "showPercentInTooltip": "0",
+            "decimals": "1",
+            "useDataPlotColorForLabels": "1",
+            //Theme
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Food",
+            "value": "285040"
+        }, {
+            "label": "Apparels",
+            "value": "146330"
+        }, {
+            "label": "Electronics",
+            "value": "105070"
+        }, {
+            "label": "Household",
+            "value": "49100"
+        }]
+    }
+}
+);
+			chartObj.render();
+		});
+	</script>
+	</head>
+	<body>
+		<div id="chart-container">FusionCharts XT will load here!</div>
+	</body>
+</html>

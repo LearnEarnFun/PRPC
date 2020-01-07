@@ -1,0 +1,143 @@
+<html><head>
+  <title>Enter policy info</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body style="
+    left: auto;
+    width: 80%;
+    margin-left: 10%;
+">
+    
+<div class="" style="
+    width: 50%;
+">
+  <h3>This is the form to enter policy info </h3>
+    
+  <form>
+        
+    <div class="form-group">
+      <label>Policy Number:</label>
+      <input type="text" name="name" class="form-control" value="US1" required="">
+	  <label>Tower Number:</label>
+      <input type="text" name="towernum" class="form-control" value="A" required="">
+
+      <label>Limit:</label>
+      <input type="text" name="limit" class="form-control" value="1,000,000" required="">
+	  <label>Attachment Point:</label>
+      <input type="text" name="ap" class="form-control" value="0" required="">
+    </div>
+	
+	<!--
+	sample for checking boot strap configurations
+	<div class="row">
+    <div class="col-xs-6 form-group">
+        <label>Polciy Number:</label>
+        <input class="form-control" type="text"/>
+    </div>
+    <div class="col-xs-6 form-group">
+        <label>Tower Number:</label>
+        <input class="form-control" type="text"/>
+    </div>
+    -->
+	       <input type="submit" value="Save">
+	
+</form></div>
+   
+
+    
+  
+  <br>
+  <table class="table table-bordered data-table">
+    <thead>
+      <tr>
+	  <th>Name</th>
+      <th>Tower Number</th>
+	  <th>Limit</th>
+	  <th>Attachment Point</th>
+      <th width="200px">Action</th>
+      </tr>
+	</thead>
+    <tbody>
+ 
+	
+	
+	</tbody>
+  </table>
+   
+   <button id="genGraph">Visualize</button>
+
+   
+<script type="text/javascript">
+	
+	 $("#genGraph").on("click",function(e){
+	 genGraph();
+	 });
+   
+     function genGraph(){
+		alert("hello world gen graph");
+	 }
+	 
+    $("form").submit(function(e){
+	//alert("hello");
+        e.preventDefault();
+        var name = $("input[name='name']").val();
+        var towernum = $("input[name='towernum']").val();
+		
+		var limit = $("input[name='limit']").val();
+		var ap = $("input[name='ap']").val();
+     
+        $(".data-table tbody").append("<tr data-name='"+name+"' data-towernum='"+towernum+"'data-limit='"+limit+"' data-ap='"+ap+"'><td>"+name+"</td><td>"+towernum+"</td><td>"+limit+"</td><td>"+ap+"</td><td><button class='btn btn-info btn-xs btn-edit'>Edit</button><button class='btn btn-danger btn-xs btn-delete'>Delete</button></td></tr>");
+    
+        $("input[name='name']").val('');
+        $("input[name='towernum']").val('');
+		$("input[name='limit']").val('');
+		$("input[name='ap']").val('');
+    });
+   
+    $("body").on("click", ".btn-delete", function(){
+        $(this).parents("tr").remove();
+    });
+    
+    $("body").on("click", ".btn-edit", function(){
+        var name = $(this).parents("tr").attr('data-name');
+        var towernum = $(this).parents("tr").attr('data-towernum');
+    
+        $(this).parents("tr").find("td:eq(0)").html('<input name="edit_name" value="'+name+'">');
+        $(this).parents("tr").find("td:eq(1)").html('<input name="edit_towernum" value="'+towernum+'">');
+    
+        $(this).parents("tr").find("td:eq(2)").prepend("<button class='btn btn-info btn-xs btn-update'>Update</button><button class='btn btn-warning btn-xs btn-cancel'>Cancel</button>")
+        $(this).hide();
+    });
+   
+    $("body").on("click", ".btn-cancel", function(){
+        var name = $(this).parents("tr").attr('data-name');
+        var towernum = $(this).parents("tr").attr('data-towernum');
+    
+        $(this).parents("tr").find("td:eq(0)").text(name);
+        $(this).parents("tr").find("td:eq(1)").text(towernum);
+   
+        $(this).parents("tr").find(".btn-edit").show();
+        $(this).parents("tr").find(".btn-update").remove();
+        $(this).parents("tr").find(".btn-cancel").remove();
+    });
+   
+    $("body").on("click", ".btn-update", function(){
+        var name = $(this).parents("tr").find("input[name='edit_name']").val();
+        var towernum = $(this).parents("tr").find("input[name='edit_towernum']").val();
+    
+        $(this).parents("tr").find("td:eq(0)").text(name);
+        $(this).parents("tr").find("td:eq(1)").text(towernum);
+     
+        $(this).parents("tr").attr('data-name', name);
+        $(this).parents("tr").attr('data-towernum', towernum);
+    
+        $(this).parents("tr").find(".btn-edit").show();
+        $(this).parents("tr").find(".btn-cancel").remove();
+        $(this).parents("tr").find(".btn-update").remove();
+    });
+    
+</script>
+     
+
+</body></html>

@@ -1,32 +1,25 @@
+  
 <html><head>
   <title>Enter policy info</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 </head>
-<body style="
-    left: auto;
-    width: 80%;
-    margin-left: 10%;
-">
-    
-	<svg height="50%" version="1.1" width="50	%" xmlns="http://www.w3.org/2000/svg" id="raphael-paper-3" style="overflow: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; cursor: default; vertical-align: middle; position: relative; background-color: rgb(255, 255, 255);" viewBox="0 0 700 381">
-	
-<div class="" style="
-    width: 50%;
-">
+<body style="left: auto;width: 80%;margin-left: 10%;">    
+
+<div class="" style=" width: 50%;">
   <h3>This is the form to enter policy info </h3>
     
   <form>
         
     <div class="form-group">
-      <label>Policy Number:</label>
+      <label>Policy Number :</label>
       <input type="text" name="name" class="form-control" value="US1" required="">
 	  <label>Tower Number:</label>
-      <input type="text" name="towernum" class="form-control" value="A" required="">
+      <input type="text" name="towernum" class="form-control" value="1" required="">
 
-      <label>Limit:</label>
-      <input type="text" name="limit" class="form-control" value="1,000,000" required="">
-	  <label>Attachment Point:</label>
+      <label>Limit (in Millions):</label>
+      <input type="text" name="limit" class="form-control" value="10" required="">
+	  <label>Attachment Point (in Millions):</label>
       <input type="text" name="ap" class="form-control" value="0" required="">
     </div>
 	
@@ -46,9 +39,6 @@
 	
 </form></div>
    
-
-    
-  
   <br>
   <table class="table table-bordered data-table">
     <thead>
@@ -71,6 +61,15 @@
 
    
 <script type="text/javascript">
+
+		function makeSVG(tag, attrs) {
+            var el= document.createElementNS('http://www.w3.org/2000/svg', tag);
+            for (var k in attrs)
+                el.setAttribute(k, attrs[k]);
+            return el;
+        }
+
+        
 	
 	 $("#genGraph").on("click",function(e){
 	 genGraph();
@@ -79,7 +78,7 @@
      function genGraph()
 	 {
 	 
-		alert("hello world gen graph");	
+		//alert("hello world gen graph");	
 		var table = $("table tbody");
 
 		var policytable = new Array ();
@@ -96,11 +95,11 @@
             limit = $tds.eq(2).text();
 			ap = $tds.eq(3).text();
         
-        alert('row number ' + (i + 1) + '\Name: ' + name
+        /*alert('row number ' + (i + 1) + '\Name: ' + name
               + '\towernum: ' + towernum
               + '\limit: ' + limit);
-	
-		policytable.push([name,towernum]);
+		*/
+		policytable.push([name,towernum,limit,ap]);
 	
 	}
 	);
@@ -116,9 +115,58 @@
 				return (a[0] < b[0]) ? -1 : 1;
 			}
 		}
+		
+		
+	/*var circle= makeSVG('circle', {cx: 100, cy: 50, r:40, stroke: 'black', 'stroke-width': 2, fill: 'red'});
+        document.getElementById('svg-tag').appendChild(circle);
+        circle.onmousedown= function() {
+            alert('hello');
+        };
+	*/	
 	
+	//alert(policytable[0][2]);	
+	/* single rectangle load code 
 	
-	 }
+	var rect= makeSVG('rect', {x: 51.5, y: 185, width:100 , height:policytable[0][2],  stroke: '#c0c0c0', 'stroke-width': 2, fill: '#f49c00'});
+    document.getElementById('svg-tag').appendChild(rect);
+    rect.onmousedown= function() {
+          alert('hello rect');
+    };
+	*/
+	
+	/* calculate height of the div*/
+	
+	var svgDiv = document.getElementById("svg-container");
+	var SvGDivHeight = svgDiv.offsetHeight;
+	//alert("SvGDivHeight >> "+SvGDivHeight);
+	
+	/* random color generator */ 
+	
+	function randomColor() {
+    var xRandCol = Math.floor(Math.random() * 256);
+    var yRandCol = Math.floor(Math.random() * 256);
+    var zRandCol = Math.floor(Math.random() * 256);
+    var randomColorValue = "rgb(" + xRandCol + "," + yRandCol + "," + zRandCol + ")";
+	return randomColorValue;
+	}
+	
+	for (var i=0; i<policytable.length ;i++)
+		{
+			/*if (i>0)*/
+			{
+			var randomColorValue = randomColor(); 
+			var rect= makeSVG('rect', {x: 51.5, y: +SvGDivHeight - +policytable[i][2], width:100 , height: +policytable[i][2] - +policytable[i][3],  stroke: '#c0c0c0', 'stroke-width': 2, fill: randomColorValue});
+    document.getElementById('svg-tag').appendChild(rect);
+			}
+			/*else
+			{
+				var rect= makeSVG('rect', {x: 51.5, y: +SvGDivHeight - +policytable[i][2], width:100 , height: +policytable[i][2],  stroke: '#c0c0c0', 'stroke-width': 2, fill: '#f49c00'});
+    document.getElementById('svg-tag').appendChild(rect);
+			}*/
+			
+		}
+		
+	}
 	 
     $("form").submit(function(e){
 	//alert("hello");
@@ -179,7 +227,20 @@
         $(this).parents("tr").find(".btn-update").remove();
     });
     
-</script>
-     
+</script>  
 
+
+<div id="svg-container">
+<svg id="svg-tag" height="50%" version="1.1" width="50%" xmlns="http://www.w3.org/2000/svg" id="svg1" style="overflow: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; cursor: default; vertical-align: middle; position: relative; background-color: rgb(255, 255, 255);" viewBox="0 0 700 381">
+  
+<!--
+  <rect y="185" height="115" x="51.5" width="100"  fill-opacity="1" fill="#f49c00" stroke="#c0c0c0" stroke-opacity="0.000001" stroke-width="0" style="cursor: pointer;">
+  </rect>
+--!>
+					
+</svg>
+
+
+
+</div>
 </body></html>

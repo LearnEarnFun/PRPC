@@ -1,3 +1,7 @@
+//10-01-2020
+bootstrap form controls ... 
+https://getbootstrap.com/docs/4.0/components/forms/
+
 //08-01-2020
 https://www.tutorialspoint.com/jquery/jquery-drawsvg.htm
 

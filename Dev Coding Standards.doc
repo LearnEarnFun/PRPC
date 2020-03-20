@@ -1,0 +1,1879 @@
+Date: Fri, 20 Mar 2020 15:56:24 +0000 (UTC)
+Message-ID: <2052052572.1413.1584719784189@ip-10-0-26-188.eu-central-1.compute.internal>
+Subject: Exported From Confluence
+MIME-Version: 1.0
+Content-Type: multipart/related; 
+	boundary="----=_Part_1412_1527595338.1584719784188"
+
+------=_Part_1412_1527595338.1584719784188
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+Content-Location: file:///C:/exported.html
+
+<html xmlns:o=3D'urn:schemas-microsoft-com:office:office'
+      xmlns:w=3D'urn:schemas-microsoft-com:office:word'
+      xmlns:v=3D'urn:schemas-microsoft-com:vml'
+      xmlns=3D'urn:w3-org-ns:HTML'>
+<head>
+    <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8=
+">
+    <title>Development Guidelines / Standards</title>
+    <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:TargetScreenSize>1024x640</o:TargetScreenSize>
+            <o:PixelsPerInch>72</o:PixelsPerInch>
+            <o:AllowPNG/>
+        </o:OfficeDocumentSettings>
+        <w:WordDocument>
+            <w:View>Print</w:View>
+            <w:Zoom>90</w:Zoom>
+            <w:DoNotOptimizeForBrowser/>
+        </w:WordDocument>
+    </xml>
+    <![endif]-->
+    <style>
+                <!--
+        @page Section1 {
+            size: 8.5in 11.0in;
+            margin: 1.0in;
+            mso-header-margin: .5in;
+            mso-footer-margin: .5in;
+            mso-paper-source: 0;
+        }
+
+        table {
+            border: solid 1px;
+            border-collapse: collapse;
+        }
+
+        table td, table th {
+            border: solid 1px;
+            padding: 5px;
+        }
+
+        td {
+            page-break-inside: avoid;
+        }
+
+        tr {
+            page-break-after: avoid;
+        }
+
+        div.Section1 {
+            page: Section1;
+        }
+
+        /* Confluence print stylesheet. Common to all themes for print medi=
+a */
+/* Full of !important until we improve batching for print CSS */
+
+@media print {
+    #main {
+        padding-bottom: 1em !important; /* The default padding of 6em is to=
+o much for printouts */
+    }
+
+    body {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        font-size: 10pt;
+        line-height: 1.2;
+    }
+
+    body, #full-height-container, #main, #page, #content, .has-personal-sid=
+ebar #content {
+        background: #fff !important;
+        color: #000 !important;
+        border: 0 !important;
+        width: 100% !important;
+        height: auto !important;
+        min-height: auto !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: block !important;
+    }
+
+    a, a:link, a:visited, a:focus, a:hover, a:active {
+        color: #000;
+    }
+
+    #content h1,
+    #content h2,
+    #content h3,
+    #content h4,
+    #content h5,
+    #content h6 {
+        font-family: Arial, Helvetica, FreeSans, sans-serif;
+        page-break-after: avoid;
+    }
+
+    pre {
+        font-family: Monaco, "Courier New", monospace;
+    }
+
+    #header,
+    .aui-header-inner,
+    #navigation,
+    #sidebar,
+    .sidebar,
+    #personal-info-sidebar,
+    .ia-fixed-sidebar,
+    .page-actions,
+    .navmenu,
+    .ajs-menu-bar,
+    .noprint,
+    .inline-control-link,
+    .inline-control-link a,
+    a.show-labels-editor,
+    .global-comment-actions,
+    .comment-actions,
+    .quick-comment-container,
+    #addcomment {
+        display: none !important;
+    }
+
+    /* CONF-28544 cannot print multiple pages in IE */
+    #splitter-content {
+        position: relative !important;
+    }
+
+    .comment .date::before {
+        content: none !important; /* remove middot for print view */
+    }
+
+    h1.pagetitle img {
+        height: auto;
+        width: auto;
+    }
+
+    .print-only {
+        display: block;
+    }
+
+    #footer {
+        position: relative !important; /* CONF-17506 Place the footer at en=
+d of the content */
+        margin: 0;
+        padding: 0;
+        background: none;
+        clear: both;
+    }
+
+    #poweredby {
+        border-top: none;
+        background: none;
+    }
+
+    #poweredby li.print-only {
+        display: list-item;
+        font-style: italic;
+    }
+
+    #poweredby li.noprint {
+        display: none;
+    }
+
+    /* no width controls in print */
+    .wiki-content .table-wrap,
+    .wiki-content p,
+    .panel .codeContent,
+    .panel .codeContent pre,
+    .image-wrap {
+        overflow: visible !important;
+    }
+
+    /* TODO - should this work? */
+    #children-section,
+    #comments-section .comment,
+    #comments-section .comment .comment-body,
+    #comments-section .comment .comment-content,
+    #comments-section .comment p {
+        page-break-inside: avoid;
+    }
+
+    #page-children a {
+        text-decoration: none;
+    }
+
+    /**
+     hide twixies
+
+     the specificity here is a hack because print styles
+     are getting loaded before the base styles. */
+    #comments-section.pageSection .section-header,
+    #comments-section.pageSection .section-title,
+    #children-section.pageSection .section-header,
+    #children-section.pageSection .section-title,
+    .children-show-hide {
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .children-show-hide.icon {
+        display: none;
+    }
+
+    /* personal sidebar */
+    .has-personal-sidebar #content {
+        margin-right: 0px;
+    }
+
+    .has-personal-sidebar #content .pageSection {
+        margin-right: 0px;
+    }
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
+-->
+    </style>
+</head>
+<body>
+    <h1>Development Guidelines / Standards</h1>
+    <div class=3D"Section1">
+        <p><br></p>
+<h1 id=3D"DevelopmentGuidelines/Standards-1.GeneralCodingStandards"><strong=
+>1.&nbsp;&nbsp;&nbsp; General Coding Standards</strong></h1>
+<p><span>These standards should be adhered to at all times. Any exceptions =
+should be raised with System Architect before any work is undertaken.</span=
+></p>
+<p><br></p>
+<p style=3D"margin-left: 0.0px;text-align: left;"><span>Before implementati=
+on of a user story in a feature, a high level design has to be agreed with =
+System Architecture team comprising of&nbsp;<a class=3D"confluence-userlink=
+ user-mention" data-username=3D"JoachimButh" href=3D"/display/~JoachimButh"=
+ data-linked-resource-id=3D"2523140" data-linked-resource-version=3D"1" dat=
+a-linked-resource-type=3D"userinfo" data-base-url=3D"https://confluence.aws=
+.agcs.allianz.com">Dr. Joachim Buth</a>&nbsp; and&nbsp;<a class=3D"confluen=
+ce-userlink user-mention current-user-mention" data-username=3D"NishanK" hr=
+ef=3D"/display/~NishanK" data-linked-resource-id=3D"42958977" data-linked-r=
+esource-version=3D"1" data-linked-resource-type=3D"userinfo" data-base-url=
+=3D"https://confluence.aws.agcs.allianz.com">Nishan Kaluthekkal</a> . The a=
+ligned architecture needs to be documented in the feature / user story wher=
+e applicable. Special attention has to be paid to impacting systems and imp=
+acting applications by reviewing the changes in the Pega Layer cake (Impact=
+ to applications like Liability XSU and Financial Lines need to be consider=
+ed carefully). Regression and impact to existing systems has to be highligh=
+ted to test team to account regression test efforts.</span></p>
+<p style=3D"margin-left: 0.0px;text-align: left;"><span>For every implement=
+ation, upon completion of a user story, a low level design document should =
+be developed indicating which code / rule was touched and what is the purpo=
+se of it. The</span> low level design document should also indicate PAL rea=
+ding, absence/presence of alerts via PDC and rule/code that is touched shou=
+ld be documented.</p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.1RuleCreationinPega"><strong>1.=
+1&nbsp;&nbsp;&nbsp; Rule Creation in Pega</strong></h3>
+<p><span>Before creating a new rule, always consider the following to ensur=
+e maximum reuse and performance:</span></p>
+<p><span>&nbsp;</span></p>
+<ul>
+<li><span>Check that an existing rule doesn=E2=80=99t already deliver the r=
+equired functionality, or could be copied and modified with little effort t=
+o meet the requirements.</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<ul>
+<li><span>Determine the reusability of the rule, and thus where it should b=
+e placed in the Class and Ruleset hierarchy.</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<ul>
+<li><span>Always follow general or project specific naming conventions and =
+standards outlined in this document.</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<ul>
+<li><span>Consider how you will test the rule when you create it.</span></l=
+i>
+</ul>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.1.1RulesetUsage&amp;Management"=
+>1.1.1&nbsp; <span>Ruleset Usage &amp; Management</span></h3>
+<p><br></p>
+<p><span>When creating a new rule, the standard approach is to save the rul=
+e in the same RuleSet as the Class it applies to. </span><span>Care should =
+be taken when saving or creating rules into a Ruleset to ensure the correct=
+ Ruleset version is used. Since parallel development often occurs, this is =
+extremely important, and if you are unsure which Ruleset version to use, di=
+scuss with your Lead Developer.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Never unlock RuleSet Versions in any environment.</span></p>
+<p><br></p>
+<p><span>During merge, the ruleset to be used is to be aligned with the Sys=
+tem Architect (for Pega - contact <a class=3D"confluence-userlink user-ment=
+ion current-user-mention" data-username=3D"NishanK" href=3D"/display/~Nisha=
+nK" data-linked-resource-id=3D"42958977" data-linked-resource-version=3D"1"=
+ data-linked-resource-type=3D"userinfo" data-base-url=3D"https://confluence=
+.aws.agcs.allianz.com">Nishan Kaluthekkal</a> ). For Other systems, respect=
+ive system owners can be contacted after checking with System Architect tea=
+m.</span></p>
+<p>Merge should be done by the Lead Developer after checking with System Ar=
+chitect and coordinating with other Lead developer of Feature team and Main=
+tenance team Lead to ensure that merge conflicts are handled. Also, special=
+ care needs to be taken regarding deployments after checking with deploymen=
+t person as well.</p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2NamingConventions">1.2&nbsp;&n=
+bsp;&nbsp; <span>Naming Conventions</span></h3>
+<p><span>All rules in PRPC must follow a specific set of naming conventions=
+. Below is a list of rule types, the naming convention, and an example of e=
+ach type.</span></p>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-1.2.1Rulenamelimitations">1.2.1&n=
+bsp;&nbsp; <span>Rule name limitations</span></h2>
+<p>Some limitations exist when naming specific types of rules and these are=
+ listed below:</p>
+<ul>
+<li><span>A RuleSet name (<strong>pyRuleSet property</strong>) may be up to=
+ 128 characters long,</span></li>
+<li><span>An Operator ID value (<strong>pyUserName property</strong>) may b=
+e up to 128 characters long,</span></li>
+<li><span>The internal key of an object (<strong>pzInskey property</strong>=
+) may be up to 255 characters for most tables. Longer file names cause comp=
+ilation issues in Windows environments,</span></li>
+<li><span>A class name (<strong>pxObjClass property</strong>) for a class y=
+ou create may be up to 56 characters long. System-created classes such as H=
+istory- classes may be longer,</span></li>
+<li><span>The visible key (<strong>pxInsName property</strong>) may be up t=
+o 128 characters long,</span></li>
+<li><span>A Short Description for a rule or data form (<strong>pyLabel prop=
+erty</strong>) may be up to 64 characters long,</span></li>
+<li><span>A property name may be up to 64 characters long,</span></li>
+<li><span>The system name (<strong>key of the Data-Admin-System data instan=
+ce</strong>) may be up to 32 characters long,</span></li>
+<li><span>The <strong>pzPVStream</strong> column or <strong>Storage Stream<=
+/strong> has a maximum of 2 gigabytes. This column typically has a data typ=
+e of blob,</span></li>
+<li><span>A <strong>node name</strong> may be up to 32 characters long,</sp=
+an></li>
+<li><strong><span>Assignments</span></strong><span> may be up to 32 charact=
+ers long.<br><br></span></li>
+</ul>
+<p><strong>Tip: </strong>The system does not always enforce size limits upo=
+n save. If you observe strange/unexplainable behavior, this may be due to n=
+ames that exceed system thresholds.</p>
+<p><br></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.2Classes">1.2.2&nbsp;&nbsp; <=
+span>Classes</span></h3>
+<ul>
+<li>Class names should be nouns and be in mixed case with the first letter =
+of each word capitalised.</li>
+<li>Class names should be simple and descriptive.</li>
+<li>Use whole words. Avoid acronyms and abbreviations (unless the abbreviat=
+ion is much more widely used than the long form, such as URL or HTML)</li>
+<li>Class names should not contain underscores.</li>
+<li>Name related objects similarly, with consistent prefixes, so you can qu=
+ickly locate similar classes in an alphabetical list.</li>
+<li>Special care need to be taken to ensure that data classes are abstract =
+and not concrete if the data classes are expected not to have instances.</l=
+i>
+</ul>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.3Activities">1.2.3&nbsp;&nbsp=
+; <span>Activities</span></h3>
+<ul>
+<li>Activity names should be prefixed with verbs, followed by a noun or nou=
+n phrase indicating what the activity operates on.</li>
+<li>Activity names should be in mixed case with the first letter of each wo=
+rd capitalised.</li>
+<li>Do not use symbols or special characters, even though you are not restr=
+icted from doing so by PRPC.</li>
+<li>Make sure the Activity name accurately reflects its intended purpose. I=
+f the purpose of the Activity significantly changes this may no longer be t=
+rue.</li>
+</ul>
+<p><span>&nbsp;</span></p>
+<p><span>Activity name example: GetCustomer</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.3.1MayStart">1.2.3.1&nbsp;&nb=
+sp;&nbsp; <span>May Start</span></h3>
+<p><span>The May Start check box should only be enabled (when permitted by =
+Activity Type) if the activity needs be called at processing starting point=
+ i.e. </span></p>
+<ul>
+<li><span>Submit Button</span></li>
+<li><span>pyActivity (via a URL)</span></li>
+<li><span>On a section via an Ajax event e.g. OnChange</span></li>
+<li><span>Service Rule</span></li>
+</ul>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.4Properties">1.2.4&nbsp;&nbsp=
+; <span>Properties</span></h3>
+<ul>
+<li>Property names should be in mixed case with the first letter of each wo=
+rd capitalised.</li>
+<li>Do not use symbols or special characters, even though you are not restr=
+icted from doing so by PRPC.</li>
+<li>Property names should easily convey their purpose in the name.</li>
+<li>Property names should be nouns or noun phrases that describe the proper=
+ty.</li>
+<li>Names of lists (PageList) should end in =E2=80=9CList=E2=80=9D</li>
+<li>Names of groups (PageGroup) should end in =E2=80=9CGroup=E2=80=9D</li>
+<li>Never prefix a property with =E2=80=98px=E2=80=99, =E2=80=98pz=E2=80=99=
+, or =E2=80=98py=E2=80=99 as these are reserved.</li>
+<li>The length of the property name should not exceed 30 characters (the li=
+mit the Database can hold)</li>
+<li>The property name should always match the name given in the Data Dictio=
+nary or other design documentation.</li>
+</ul>
+<p><br></p>
+<p>Property name example: CustomerName, CustomerAddressList, CustomerAddres=
+sGroup</p>
+<p><br></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.5FlowActions">1.2.5&nbsp;&nbs=
+p; <span>Flow Actions</span></h3>
+<ul>
+<li>Flow Action names should be in mixed case with the first letter of each=
+ word capitalised.</li>
+<li><span>Do not use symbols or special characters, even though you are not=
+ restricted from doing so by PRPC.</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<p><span>The following rule types directly called from a Flow Action should=
+ be identified by prefixing its name to describe the association:</span></p=
+>
+<p><br></p>
+<ul>
+<li>Pre Data Transform =E2=80=93 precede flow action name with =E2=80=9CPre=
+=E2=80=9D - PreApproveCorrespondence</li>
+<li>Post Data Transform =E2=80=93 precede flow action name with =E2=80=9CPo=
+st=E2=80=9D -PostApproveCorrespondence</li>
+<li>Validate - precede flow action name with =E2=80=9CVal=E2=80=9D - ValApp=
+roveCorrespondence</li>
+</ul>
+<p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><=
+/p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.6WhenRules">1.2.6&nbsp;&nbsp;=
+ <span>When Rules</span></h3>
+<ul>
+<li><span>When Rule</span> names should be in mixed case with the first let=
+ter of each word capitalised.</li>
+<li><span>Do not use symbols or special characters, even though you are not=
+ restricted from doing so by PRPC.</span></li>
+<li><span>The name should reflect the =E2=80=98true=E2=80=99 state of the r=
+ule.</span></li>
+<li><span>When rules should have names that logically follow the word =E2=
+=80=93 =E2=80=9CWhen=E2=80=9D.</span></li>
+<li><span>A When Rule should be named such that if the specific contents of=
+ the rule changes, but not its context, the name is still relevant.</span><=
+/li>
+</ul>
+<p><span>&nbsp;</span></p>
+<p><span>For example, a When Rule called =E2=80=98Is37.5Hours=E2=80=99 can =
+only ever apply to a content of 37.5 hours. A more appropriate name would b=
+e =E2=80=98IsFullWorkingWeek=E2=80=99, thereby allowing the change of the b=
+usiness rule determining the condition and thus a =E2=80=98working week=E2=
+=80=99 without making the name irrelevant. </span><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.7RoutingActivities">1.2.7&nbs=
+p;&nbsp; <span>Routing Activities</span></h3>
+<ul>
+<li>Routing Activity names should be in mixed case with the first letter of=
+ each word capitalised.</li>
+<li>Do not use symbols or special characters, even though you are not restr=
+icted from doing so by PRPC.</li>
+<li>Routing activities should start with =E2=80=98To=E2=80=99</li>
+<li>Routing Activities should end in a noun phrase indicating the route des=
+tination</li>
+</ul>
+<p><br></p>
+<p>Routing Activities naming examples: ToWorkbasketOrWorkList</p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.8Functions">1.2.8&nbsp;&nbsp;=
+ <span>Functions</span></h3>
+<ul>
+<li>The naming of functions (Rule-Utility-Function) follows the Java naming=
+ standards (initial lower case, then mixed case) since these are java funct=
+ions.</li>
+</ul>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.9Flows">1.2.9&nbsp;&nbsp; <sp=
+an>Flows</span></h3>
+<ul>
+<li>Flow names should be in mixed case with the first letter of each word c=
+apitalised.</li>
+<li>Do not use symbols or special characters, even though you are not restr=
+icted from doing so by PRPC.</li>
+<li>Flow names should describe the overall purpose of the flow.</li>
+</ul>
+<p>Flow naming examples: PolicyNewBusiness, PolicyChange</p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.10Streams">1.2.10&nbsp;&nbsp;=
+&nbsp; <span>Streams</span></h3>
+<ul>
+<li>Stream names should be in mixed case with the first letter of each word=
+ capitalised.</li>
+<li>Do not use symbols or special characters, even though you are not restr=
+icted from doing so by PRPC.</li>
+<li>Stream names should be nouns or noun phrases that indicate the main dat=
+a displayed by the stream.</li>
+<li>This name should relate to the name of the activity or action that disp=
+lays the stream.</li>
+</ul>
+<p>Streams naming example: WorkSummary</p>
+<p><br></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.11FileNames">1.2.11&nbsp;&nbs=
+p;&nbsp; <span>File Names</span></h3>
+<ul>
+<li>Files under Rule-File- should be named using all lowercase characters. =
+This avoids confusion between systems like UNIX that have case-sensitive fi=
+le names and systems like Windows that do not have case-sensitive file name=
+s.</li>
+<li>Names of files for related functions should begin with the same prefix =
+characters so that they are grouped together in the listings.</li>
+<li>It is acceptable to use an underscore to separate words.</li>
+</ul>
+<p><br></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.12Workbaskets">1.2.12&nbsp;&n=
+bsp;&nbsp; <span>Workbaskets</span></h3>
+<ul>
+<li>Workbasket names should be in mixed case with the first letter of each =
+word capitalised.</li>
+<li>Do not use symbols or special characters, even though you are not restr=
+icted from doing so by PRPC.</li>
+<li>Use a name that clearly identifies the purpose of the workbasket</li>
+<li>Workbaskets should have the suffix =E2=80=98WB=E2=80=99<strong>. </stro=
+ng></li>
+</ul>
+<p><br></p>
+<p>Workbasket naming example: AnalystWB</p>
+<p><br></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.13WorkGroups">1.2.13&nbsp;&nb=
+sp;&nbsp; <span>Work Groups</span></h3>
+<ul>
+<li>Work Group names should be in mixed case with the first letter of each =
+word capitalised.</li>
+<li>Do not use symbols or special characters, even though you are not restr=
+icted from doing so by PRPC.</li>
+<li>Use a name that clearly identifies the purpose of the work group</li>
+<li>Work Groups should have the suffix =E2=80=98Group=E2=80=99<strong>. </s=
+trong></li>
+</ul>
+<p><br></p>
+<p>Work Group naming example: HelpDeskGroup</p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.14WorkStatus">1.2.14&nbsp;&nb=
+sp;&nbsp; <span>Work Status</span></h3>
+<ul>
+<li>Start each Work Status value with one of the words New, Open-, Pending-=
+, or Resolved-</li>
+</ul>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.15RuleSets">1.2.15&nbsp;&nbsp=
+;&nbsp; RuleSets</h3>
+<ul>
+<li>Use names that are short and intuitive.</li>
+<li>Use names that make sense and avoid using obscure acronyms</li>
+<li>Do not use Pega or Pega- as a prefix for your RuleSet names. They are r=
+estricted for Pegasystems use and could cause unexpected behaviour.</li>
+<li>Names can be a maximum of 32-characters and cannot contain spaces.</li>
+<li>Do not use symbols or special characters. The system will prevent entry=
+ of rules with these attributes.</li>
+</ul>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.16DataTransform">1.2.16&nbsp;=
+&nbsp;&nbsp; Data Transform</h3>
+<ul>
+<li><span>When creating a new instance of a class it is typical to use the =
+Pega convention of pyDefault.</span></li>
+<li><span>If there is a specific purpose for the rule, for example when rep=
+lacing an activity in a flow then follow the naming conventions of an Activ=
+ity</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<p><span>Data Transform name example: SetCustomerDetails</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.17Reportdefinition">1.2.17&nb=
+sp;&nbsp;&nbsp; <span>Report definition</span></h3>
+<p><br></p>
+<p>For all reports rule types the rule name should represent the purpose of=
+ the report. For example: GetCustomerList.</p>
+<p>The Full Description field on the History tab contains text which will b=
+e displayed as the report title to the user. This should contain text succi=
+nct but meaningful to the end-user.</p>
+<p style=3D"margin-left: 0.0px;text-align: left;"><span style=3D"color: rgb=
+(23,43,77);text-decoration: none;">Whenever report definition is written, t=
+ake care to ensure that columns of report definition are either in exposed =
+column in the same table or indexed appropriately.&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.17.1ListViews">1.2.17.1&nbsp;=
+&nbsp;&nbsp; <span>List Views</span></h3>
+<p>This control has been deprecated and must not be used.</p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.17.2SummaryViews">1.2.17.2&nb=
+sp;&nbsp;&nbsp; <span>Summary Views</span></h3>
+<p>This control has been deprecated and must not be used.</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.18Connect-SOAP">1.2.18&nbsp;&=
+nbsp;&nbsp; <span>Connect-SOAP</span></h3>
+<p>This method is used to invoke a web service to request information from =
+an external system. However, external factors can cause a connector to fail=
+ to obtain the data it needs =E2=80=93 for example the external system coul=
+d be offline.</p>
+<p><br></p>
+<p>Exceptions and errors should be handled using one of the following metho=
+ds:</p>
+<p><br></p>
+<ol>
+<li>Use the Error Handler Flow specified on the Service tab of the Rule-Con=
+nect-SOAP rule. This can be used to intercept errors such as connection fai=
+lures and timeouts. A standard error handler flow is available called Conne=
+ctionProblem.</li>
+</ol>
+<p><br></p>
+<p>If an error handler flow is not specified, you must handle the exception=
+ using the method below; otherwise the standard flow called FlowProblems wi=
+ll be triggered.</p>
+<p><br></p>
+<ol>
+<li>Configure the connector activity to manage the exceptions using a trans=
+ition step.</li>
+</ol>
+<p><br></p>
+<p>Note that you can use one, but not both of these methods. The Error Hand=
+ler Flow feature is not triggered if the connector activity has a transitio=
+n step that catches exceptions.</p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.19DataPages">1.2.19&nbsp;&nbs=
+p;&nbsp; <span>Data Pages</span></h3>
+<p><span>Data pages are used to hold data that is needed by the transaction=
+ at that point in time for a given transaction. PRPC ensures that the data =
+in the data page is up-to-date.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Data pages are created when first accessed. Global node-level data=
+ pages can improve performance when all or many requestors need to access r=
+eference type data.</span></p>
+<p><span>&nbsp;</span></p>
+<ul>
+<li><span> Data Page rule names should be in mixed case with the first lett=
+er of each word capitalised.</span></li>
+<li><span> It should describe the data stored on the page.</span></li>
+</ul>
+<p><br></p>
+<p><span>The scope of the data page should be checked thoroughly to ensure =
+that the data page is invoked only when needed. A node level data page shou=
+ld be defined for reference data like CurrencyList, CountryList etc.</span>=
+</p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.20Databasetablenames">1.2.20&=
+nbsp;&nbsp;&nbsp; <span>Database table names</span></h3>
+<p>In general, database tables should be named in accordance with the locat=
+ion of the respective work or data class in the &lt;Customer&gt; Enterprise=
+ Class Structure (ECS).<br><br></p>
+<p><strong><u>Work Tables</u></strong> should be mapped on the implementati=
+on layer so as to allow multiple lines of business using the same framework=
+ application to map to different database tables. The name of a work table =
+should be:</p>
+<p>&lt;LOB-name&gt;_work_&lt;work-pool-name&gt;</p>
+<p>Abbreviations of line of business name and work pool name should match t=
+he abbreviations in the ECS. (Case does not matter for DB2 table names.)</p=
+>
+<p>For example:</p>
+<p>Line of business =3D LOB1; Work Pool =3D Onboarding<br>Database table na=
+me: <strong>lob1_work_onboarding</strong></p>
+<p><u>&nbsp;</u></p>
+<p><strong><u>Work History Tables</u></strong> should be named as follows:<=
+/p>
+<p>&lt;LOB-name&gt;_history_work_&lt;work-pool-name&gt;</p>
+<p>Abbreviations of line of business name and work pool name should match t=
+he abbreviations in the ECS.</p>
+<p>For example:</p>
+<p>Line of business =3D LOB1; Work Pool =3D Onboarding<br>Database table na=
+me: <strong>lob1_history_work_onboarding</strong></p>
+<p><u>&nbsp;</u></p>
+<p><strong><u>Data Tables</u></strong> that represent division-wide or ente=
+rprise-wide data tables or reference data should be named as follows:</p>
+<p>Division- wide: &lt;LOB-name&gt;_data_&lt;domain-name&gt;</p>
+<p>Enterprise-wide: ent_data_&lt;domain-name&gt;</p>
+<p>Abbreviations of line of business name and domain name should match the =
+abbreviations in the ECS.</p>
+<p>For example:</p>
+<p>Division-wide wide reference table for Div1; Domain Name =3D Account<br>=
+Database table name: <strong>div1_data_account</strong></p>
+<p>Enterprise-wide data table; Domain Name =3D Product<br>Database table na=
+me: <strong>myco_data_product</strong></p>
+<p><u>&nbsp;</u></p>
+<p><strong><u>Constraints</u></strong> on a database tables containing work=
+ or data should be named using the table name suffixed by _PK.</p>
+<p>For example:</p>
+<p>Database table name =3D div1_work_product <br>Primary key name: <strong>=
+div1_work_product_pk</strong></p>
+<p><br></p>
+<p>If a data class does not have instances, thencreate the data class as ab=
+stract. It should not be concrete.</p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.21Otherrules">1.2.21&nbsp;&nb=
+sp;&nbsp; <span>Other rules</span></h3>
+<ul>
+<li>Rule names should be in mixed case with the first letter of each word c=
+apitalised.</li>
+<li><span>Do not use symbols or special characters, even though you are not=
+ restricted from doing so by PRPC.</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.2.22DataTransforms">1.2.22&nbsp=
+;&nbsp;&nbsp; <span>Data Transforms</span></h3>
+<ul>
+<li><span>Do not check superclass data transform, if not needed. Please che=
+ck if similar data transform exists in the super class and only then checkb=
+ox it.</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<p><span><span class=3D"confluence-embedded-file-wrapper confluence-embedde=
+d-manual-size"><img class=3D"confluence-embedded-image" height=3D"62" src=
+=3D"bec57969c64599be8eb6e5fa0d780615" data-image-src=3D"/download/attachmen=
+ts/71303178/image2020-2-3_17-11-14.png?version=3D1&amp;modificationDate=3D1=
+580746274897&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-=
+resource-id=3D"78610635" data-linked-resource-version=3D"1" data-linked-res=
+ource-type=3D"attachment" data-linked-resource-default-alias=3D"image2020-2=
+-3_17-11-14.png" data-base-url=3D"https://confluence.aws.agcs.allianz.com" =
+data-linked-resource-content-type=3D"image/png" data-linked-resource-contai=
+ner-id=3D"71303178" data-linked-resource-container-version=3D"8" width=3D"3=
+72"></span></span></p>
+<p><span>&nbsp;</span></p>
+<ul>
+<li><span>Parameterise where possible. Pay special attention to PageName pa=
+rameter that can be used to handle pyWorkPage from being hardcoded.</span><=
+/li>
+</ul>
+<p><span>&nbsp;</span></p>
+<p><span><span class=3D"confluence-embedded-file-wrapper confluence-embedde=
+d-manual-size"><img class=3D"confluence-embedded-image" height=3D"159" src=
+=3D"d89edaaa43d3d4e65e736d4d4c32ef8e" data-image-src=3D"/download/attachmen=
+ts/71303178/image2020-2-3_17-10-51.png?version=3D1&amp;modificationDate=3D1=
+580746251311&amp;api=3Dv2" data-unresolved-comment-count=3D"0" data-linked-=
+resource-id=3D"78610634" data-linked-resource-version=3D"1" data-linked-res=
+ource-type=3D"attachment" data-linked-resource-default-alias=3D"image2020-2=
+-3_17-10-51.png" data-base-url=3D"https://confluence.aws.agcs.allianz.com" =
+data-linked-resource-content-type=3D"image/png" data-linked-resource-contai=
+ner-id=3D"71303178" data-linked-resource-container-version=3D"8" width=3D"4=
+68"></span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-1.3GeneralRuleStandards">1.3&nbsp=
+;&nbsp;&nbsp; <span>General Rule Standards</span></h2>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.1RuleCheck-In">1.3.1&nbsp;&nb=
+sp; <span>Rule Check-In</span></h3>
+<p><span>When checking in a rule, whether it is a new rule, or an update of=
+ an existing rule, the following must be always be observed. This includes =
+Save As where you are not prompted for a check-in comment by PRPC.</span></=
+p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>Only check in the rule if you have made a change. If you have not=
+ made changes, or want to discard any changes you have made, use the =E2=80=
+=98Delete Checked Out Rule=E2=80=99 feature instead.</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>Precede the comment with a reference to the work you are undertak=
+ing. For example, the defect reference number, the CR change number and the=
+ release the change was undertaken for.</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>Make sure the comment is a meaningful description of the modifica=
+tion. Avoid short or ambiguous comments, and =E2=80=98temporary=E2=80=99 ch=
+eck-in comments. If you are testing some code that requires you to check in=
+ the rule first, you may enter a short =E2=80=98testing=E2=80=99 comment in=
+stead, e.g. for Agent processing. Ensure that your final check-in comment b=
+efore finishing work on the rule is a full description as outlined above.</=
+span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>When you use Save As to save a rule up into a new RuleSet, you mu=
+st complete the first Check In comment detailing the reason for the copy fo=
+rward (see section 2.3.1). </span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>If you create a later version of a Rule by choosing =E2=80=98Save=
+ As=E2=80=99 on an earlier version, and subsequently don=E2=80=99t change o=
+r no longer need the rule, delete it from the current RuleSet so the older =
+version remains the most recent.</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.2RuleHistoryFullDescriptionan=
+dUsage">1.3.2&nbsp;&nbsp; <span>Rule History Full Description and Usage</sp=
+an></h3>
+<p><span>When creating new rules, on each rule=E2=80=99s History tab, both =
+the Full Description and Usage should be completed.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>When updating a rule, if there is no current description or usage =
+information you must provide some even if this is simply a description of t=
+he area that you have changed.</span></p>
+<p><span>&nbsp;</span></p>
+<p><strong>Full Description</strong></p>
+<p><span>Enter information relating to this rule instance. This should desc=
+ribe what the rule does in entirety, but not how it does it. Include input,=
+ output and expected behaviour, but do not list parameters if they are alre=
+ady defined on the Parameters Tab. The description should enable a develope=
+r with no prior knowledge of the rule to understand its function.</span></p=
+>
+<p><span>&nbsp;</span></p>
+<p><span>The full description should not be left blank (except for the situ=
+ation described in the note below).</span></p>
+<p><span>&nbsp;</span></p>
+<p><strong>Usage</strong></p>
+<p><span>Enter information for later reference relating to how the rule is =
+currently used, special considerations for its use, or other facts about th=
+is instance. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.3RuleShortDescriptions">1.3.3=
+&nbsp;&nbsp; <span>Rule Short Descriptions</span></h3>
+<p><span>The Short Description field is available on every rule and data fo=
+rm. It must be completed giving a short, descriptive explanation of what th=
+e rule does. </span></p>
+<p>Internally, the Short Description field corresponds to the @baseclass.py=
+Label property. Short description text is sometimes called the "label" of t=
+he object.</p>
+<p>In several cases, the Short Description text is visible to application u=
+sers as well as to developers. For these cases, it is important to choose w=
+ording of the text to be meaningful to users in the context of their work. =
+For example</p>
+<ul>
+<li><span>The Short Description text of an Operator ID data instance appear=
+s as the name of the operator on the My Group lists of the Process Work pan=
+el</span></li>
+<li><span>The Short Description text of certain class rules becomes a work =
+pool name, visible on the </span><span>WorkUser</span><span> and </span><sp=
+an>WorkManager</span><span> portals</span></li>
+<li><span>The Short Description text of starter flow rules appears in a lis=
+t for entering new work objects</span></li>
+<li><span>The Short Description text for property rules appears when using =
+the Report wizard</span></li>
+<li><span>The Short Description text for portal rules appears in the Portal=
+ Layout area of the Profile. This feature affects only those users =E2=80=
+=94 typically developers =E2=80=94 who can access multiple portal layouts</=
+span></li>
+<li><span>The Short Description text for flow action rules appears in the F=
+low=E2=80=99s Take Action drop down list and run time</span></li>
+</ul>
+<p><span>Note:</span> When an application is localized to support users wit=
+h multiple languages or locales, the Short Description text that is visible=
+ to users can be converted through field value rules to a locale-specific e=
+quivalent.</p>
+<p><span>&nbsp;</span></p>
+<p><span>If you do a =E2=80=98Save As=E2=80=99 on another rule, PRPC will n=
+ot prompt you to update the new rule Short Description. Ensure that this is=
+ completed and relevant to the rule you are saving.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Take care to update the short description on RuleSet Versions to r=
+eflect the intended release.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.4RedundantRules">1.3.4&nbsp;&=
+nbsp; <span>Redundant Rules</span></h3>
+<p><span>If an existing rule is no longer needed in the application at all =
+as a result of your changes, then it should be marked as withdrawn (removed=
+ for all versions). </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.5ReferencingpyWorkPage">1.3.5=
+&nbsp;&nbsp; <span>Referencing pyWorkPage</span></h3>
+<p><span>Do not reference pyWorkPage directly. You must reference =E2=80=98=
+.=E2=80=99 or =E2=80=98Primary=E2=80=99 instead. There is no need therefore=
+ to define pyWorkPage on the Pages and Classes tab. Primary will always ref=
+er to the page the activity is working on, rather than the step page of the=
+ individual step being executed.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.6HardcodingValues">1.3.6&nbsp=
+;&nbsp; <span>Hard coding Values</span></h3>
+<p><span>Avoid hard coding values into rules, particularly if the variables=
+ are referenced in more than one place and likely to change. Instead, make =
+your code data driven by holding any values in data tables, dynamic system =
+settings or rules that can be delegated (such as decision tables). </span><=
+/p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.7BlockedRules">1.3.7&nbsp;&nb=
+sp; <span>Blocked Rules</span></h3>
+<p><span>Take extreme care when marking a rule as blocked. This will cause =
+all rules of the same name and type in all RuleSets and Classes to cause an=
+ exception during Rule Resolution, which will be displayed on the Applicati=
+on. If a rule is no longer required, it should be withdrawn. Blocking a rul=
+e should only be conducted after reaching agreement with your Lead Develope=
+r/Software Architect/LSA and be well documented.</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.8DraftRules">1.3.8&nbsp;&nbsp=
+;&nbsp;&nbsp;&nbsp; <span>Draft Rules</span></h3>
+<p><span>Before handover, all draft rules should either be marked as not dr=
+aft and handed over, or removed completely. Draft Rules will not be package=
+d by PRPC.</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.9ScopeofWork">1.3.9&nbsp;&nbs=
+p;&nbsp;&nbsp;&nbsp; <span>Scope of Work</span></h3>
+<p><span>Only make changes that are in scope for the work you have been tas=
+ked with. If you come across other rules that you think need to be improved=
+ that are not in scope, raise them with the LSA and seek confirmation as to=
+ if the work is in scope for your current release or not.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.10Messages">1.3.10&nbsp;&nbsp=
+;&nbsp; <span>Messages</span></h3>
+<p><span>If there is display text that will potentially change or be used e=
+lsewhere, use a Message rule to hold the text. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Use Messages for all validation error messages.</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-1.3.11ScreenStandards">1.3.11&nbs=
+p;&nbsp;&nbsp; <span>Screen Standards</span></h2>
+<p>When developing screens (Rule-HTML-Section, Rule-HTML-Harness) in PRPC, =
+the following rules must be followed at all times:</p>
+<ul>
+<li><span>A section containing property content should be located in the cl=
+ass where the properties are located.</span></li>
+<li><span>Labels for required fields should always be marked with the requi=
+red asterisk (*)</span></li>
+<li><span>Property formatting should always be done at the property level a=
+nd only used within a section if the standard property format needs to be o=
+verridden.</span></li>
+<li><span>Establish the customers lowest screen resolution requirements and=
+ built and test screens on this resolution. If a minimum resolution is not =
+provided assume a base of 1024 * 768 screen resolution and build and test t=
+o that standard.</span></li>
+<li><span>Horizontal scrolling is forbidden. Vertical scrolling</span> <spa=
+n>should not exceed 3 screen lengths (based on the lowest screen resolution=
+ requirement). Aim to keep important data and required fields visible witho=
+ut scrolling. </span></li>
+<li><span>Localization should always be enabled.</span></li>
+<li><span>All screens should be created using auto generated HTML and in th=
+e case that this is not possible, only the area of the screen requiring man=
+ual HTML should be edited in its own rule.</span></li>
+<li><span>All screens should be generated for JSP (including Rule-HTML-Prop=
+erty, Rule-HTML-Fragment, Rule-Obj-HTML).</span></li>
+<li><span>Read only displays of a particular section should be controlled o=
+utside of the section either through the activity or the harness in which i=
+t is included.</span></li>
+<li><span>Streamline the UI so that there is not too much clicking, no whit=
+e space where conditional fields display, avoid clutter =E2=80=93 duplicate=
+ headers, nested outlines, borders and backgrounds, etc.</span></li>
+<li><span>Use radio buttons if three or fewer options are available to be s=
+elected. For greater than three options, a drop down list box should be use=
+d.</span></li>
+<li><span>Make use of newer Out of the Box UI controls where they make sens=
+e. Don=E2=80=99t just use them for the sake of using them.</span></li>
+<li><span>Smart Layouts should be used for consistent, aligned layout in PR=
+PC 5.5 and above for data entry and display. Options include =E2=80=98singl=
+e=E2=80=99, =E2=80=98double=E2=80=99 and =E2=80=98triple=E2=80=99 column pa=
+irs and, from v6, =E2=80=98custom=E2=80=99. From v6 smart layouts allows =
+=E2=80=98make columns to be editable=E2=80=99 giving greater flexibility to=
+ adapt Smart Layouts, such as merging rows or columns and changing column t=
+ype, while still retaining Smart Layouts consistent layouts.</span></li>
+<li><span>Freeform layouts are still available. They should be used for Lis=
+tViews and embedding 1 or more Smart Layout sections inside layout cells. T=
+hese layouts will work best defined as % or selecting the circles adjacent =
+to the row and column for the layout and de-selecting width and height to =
+=E2=80=98run on client=E2=80=99. </span></li>
+<li><span>Additionally advanced controls that do not follow the standard =
+=E2=80=98label-&gt;field=E2=80=99 pattern, such as Paragraphs, Images and C=
+harts may benefit from Freeform layouts.</span></li>
+<li><span>If drop down list boxes or radio button sets extend beyond the wi=
+dth defined in the skin for value fields, the row should be merged with the=
+ following column.</span></li>
+<li><span>Repeating data can be displayed in repeating layouts. Options inc=
+lude repeating rows, columns, or tabs but care should be taken in deciding =
+which to use. <br>Repeating Tabs and Columns should use the =E2=80=98rule o=
+f 7=E2=80=99 (+/-2) to ensure easy user comprehension and avoid horizontal =
+scrolling.<br>Repeating rows work best with single horizontal lines of line=
+ of data are being repeated for an intuitive UI and ease of comprehension. =
+If repeating a larger multi-row section an alternative should be used.</spa=
+n></li>
+<li><span>Remove unnecessary sections on Harnesses for a tidier look. Use W=
+hen rules to hide empty and unnecessary sections from users.</span></li>
+<li><span>Inline styles should be used as a last resort - they are not reus=
+able, increase maintenance and are difficult for ensuring consistency.</spa=
+n></li>
+<li><span>When full text error messaging is turned on in the harness the co=
+mbination of full text error &amp; px-fixed leads to inputs being cropped o=
+ff and users unable to see fields with errors.</span></li>
+</ul>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-1.3.12UIGuardrails">1.3.12&nbsp;&=
+nbsp;&nbsp; <span>UI Guardrails</span></h2>
+<p><span>&nbsp;</span></p>
+<p><span>Some additional UI guardrails can be found in the presentation bel=
+ow:</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-1.3.13ErrorHandling">1.3.13&nbsp;=
+&nbsp;&nbsp; <span>Error Handling</span></h3>
+<p><span>Error handling in general terms is the process of responding to th=
+e occurrence of exceptions during computation. These anomalous or exception=
+al events require special processing which means often changing the normal =
+flow of program execution.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>The rule-of-thumb for handling errors in PRPC is:</span></p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>Always ensure that the error event is logged externally. This cou=
+ld be achieved by writing out to the PRPC Log file. The developers could ma=
+ke use of the following method:</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>Log-Message: Calling this method writes to the PegaRules.log file=
+. An example of how to call this method is outlined below.</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>As a minimum and mandatory requirement we need to write the errors=
+ out to the PRPC log files.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Production environment is configured to only log errors however, i=
+t would be very helpful for live-services investigating live issues to be a=
+ble to change the logging level to =E2=80=9CDebug=E2=80=9D and be able to s=
+ee additional logging which could help pin point the problem area/code.</sp=
+an></p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>When logging an error always ensure that there is sufficient info=
+rmation in the log message so that Live Services could trace it back to the=
+ PRPC rule easily. We can do that by adding the name of the activity rule t=
+hat write the error/debug information out to the log file.</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>When coding error handling, ensure that the following has been co=
+nsidered:</span></li>
+</ol>
+<p><span>How will the User be informed of the error? </span></p>
+<p><span>Will the error message be meaningful to them?</span></p>
+<p><span>If it is an asynchronous process in which the error occurs, how wi=
+ll the User be notified?</span></p>
+<ol>
+<li><span>Is this something that Production Support team need to be able to=
+ detect and act on? If so, is the error handled in the way they need it to =
+be handled and reported.</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>Always apply error handling around any SQL interaction with the d=
+atabase =E2=80=93 i.e. don=E2=80=99t assume that a query will necessarily w=
+ork </span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>Be consistent when displaying an error</span></li>
+<ol>
+<li><span>Make use of the enterprise level FieldValue to display database e=
+rror messages</span></li>
+</ol>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h4 id=3D"DevelopmentGuidelines/Standards-1.3.13.1Specificmethodsrequiringa=
+dditionalerrorhandling">1.3.13.1&nbsp;&nbsp; <span>Specific methods requiri=
+ng additional error handling</span></h4>
+<p><span>&nbsp;</span></p>
+<p><span>When writing an activity every step should have error handling car=
+efully thought through; however, there needs to have mandatory error handli=
+ng in place if the following methods are to be used:</span><span>&nbsp;</sp=
+an></p>
+<h4 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.1Obj-Open-By-HandleandOb=
+j-Open">1.3.13.1.1&nbsp;&nbsp;&nbsp; <span>Obj-Open-By-Handle and Obj-Open<=
+/span></h4>
+<p><span>&nbsp;</span></p>
+<p><span>Both the methods Obj-Open and Obj-Open-By-Handle provide the capab=
+ility to retrieve and open a single instance of a class from the database o=
+n to the clipboard.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>The developer can choose to:</span></p>
+<ol>
+<li><span>Lock the instance</span></li>
+<li><span>Release the lock when the instance is persisted back into the Dat=
+abase.</span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>However, where possible always make use of the method =E2=80=93 Ob=
+j-Open-By-Handle.</span></p>
+<ol>
+<li><span>This ensures faster retrieval of the record due to the presence o=
+f a database Index</span></li>
+<li><span>Only ever lock the instance if it needs to be changed</span></li>
+<li><span>If the lock is not being released when the instance is persisted =
+then this should be agreed with the lead developer.</span></li>
+<li><span>There must be a transition step/steps to handle any failures </sp=
+an></li>
+<li><span>The exception must be handled. This is labelled as&nbsp;</span><s=
+pan> Exception, Jump to later Step. <strong>This must not be blank.</strong=
+></span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h5 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.2Obj-Save">1.3.13.1.2&nb=
+sp;&nbsp;&nbsp; <span>Obj-Save</span></h5>
+<p><br></p>
+<p>U<span>se this method with caution as&nbsp; this is not recommended to b=
+e used since it could cause transaction mismatch errors and break the trans=
+action integrity provided by Pega out of the box.</span></p>
+<p><br></p>
+<p><span>Use this method to request that the system save a clipboard page t=
+o the PegaRULES database or to an external database. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>This method does not always cause the object to be written immedia=
+tely to the database but performs a "deferred write" operation. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>When you use the Obj-Save method in an activity with Activity Type=
+ of Trigger, Utility, Notify, Assign, or Route, do not check the WriteNow c=
+heck box. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Always allow PRPC to persist the record into the database. If ther=
+e is ever a need to tick the boxes for WriteNow OR WithErrors then this nee=
+ds to be agreed with the lead developer.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h5 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.3Rule-Connect-SQL">1.3.1=
+3.1.3&nbsp;&nbsp;&nbsp; <span>Rule-Connect-SQL</span></h5>
+<h5 id=3D"DevelopmentGuidelines/Standards-">&nbsp;</h5>
+<p><span>This method is used to retrieve one or more records from the datab=
+ase when Obj methods are not appropriate or for external databases.</span><=
+/p>
+<p><span>&nbsp;</span></p>
+<p><span>Any Rule-Connect-SQL called from an integrator shape within a flow=
+ rule can have an Error Handler Flow specified on each database operation t=
+ab (Open, Delete, Browse, Save). This can intercept errors such as general =
+connection issue, SQL query timeouts, and database issues.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>The approach is not appropriate where the Rule-Connect-SQL is call=
+ed directly from an RDB- method in an activity. In this situation, a transi=
+tion should be used to trap any error resulting from the execution of the R=
+ule-Connect-SQL. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Any stored procedure that is called should be defined to return a =
+standard status code that must be inspected in the transition. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>If the returned status code is not good, then a later step must be=
+ called which will call an activity to handle the error.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Additional transitions should also be used when there is no status=
+ return code to inspect: </span></p>
+<p><span>StepStatusFail <em>when </em>condition =E2=80=93 this will interce=
+pt errors of the type: </span></p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>=E2=80=9CThere was a problem getting a list: code: 842 SQLSTATE: =
+42000 Message: ORA-00942: table or view does not exist=E2=80=9D </span></li=
+>
+<li><span>If the StepStatusFail <em>when </em>condition is true, processing=
+ will jump to the error handling step. If this step generates an email or c=
+orrespondence, the failure message should be picked out for inclusion in th=
+e email/notification. </span></li>
+<li><span>OnException Jump to Later Step Label option - this will intercept=
+ java exceptions that may occur following the SQL failure. </span></li>
+<li><span>Again, processing should be directed to jump to the error handlin=
+g step. </span></li>
+<li><span>In addition to the above, a consistent error page should be defin=
+ed in each operation tab using the following standard syntax: {SQLPage:SQLE=
+rrors} </span></li>
+<li><span>This page should always be inspected for any other SQL errors tha=
+t occur. </span></li>
+</ol>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h5 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.4Obj-Refresh-And-Lock">1=
+.3.13.1.4&nbsp;&nbsp;&nbsp; <span>Obj-Refresh-And-Lock</span></h5>
+<h5 id=3D"DevelopmentGuidelines/Standards-.1"><span>&nbsp;</span></h5>
+<p><span>Use this method to assure that the contents of the step page are c=
+urrent and a lock is held on the corresponding object.</span></p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>If the object is locked and the lock has not expired, this method=
+ has no effect. </span></li>
+<li><span>If the object is not locked, this method acquires a lock and if n=
+ecessary replaces the step page contents with the current value of an objec=
+t instance.</span></li>
+<li><span>This method updates the <em>pxMethodStatus</em></span></li>
+</ol>
+<p><span>The developer will need to handle the following situations that ca=
+n cause the method status to be Fail or Warn:</span></p>
+<p><span>&nbsp;</span></p>
+<ol>
+<li><span>If the instance is locked by another requestor, the method return=
+s a Fail status.</span></li>
+<li><span>If the key supplied does not match the key of any instance in the=
+ database, the system creates a page of the indicated class that is empty e=
+xcept for the <em>pxObjClass</em> property, and returns a Fail status.</spa=
+n></li>
+</ol>
+<h5 id=3D"DevelopmentGuidelines/Standards-.2"><span>&nbsp;</span></h5>
+<p><span>&nbsp;</span></p>
+<h5 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.5Obj-List-View">1.3.13.1=
+.5&nbsp;&nbsp;&nbsp; <span>Obj-List-View</span></h5>
+<h5 id=3D"DevelopmentGuidelines/Standards-.3"><span>&nbsp;</span></h5>
+<p><span>This method should not be used as List Views have been deprecated.=
+</span></p>
+<h5 id=3D"DevelopmentGuidelines/Standards-.4"><span>&nbsp;</span></h5>
+<p><span>&nbsp;</span></p>
+<h5 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.6Page-New,Page-Removeand=
+Remove">1.3.13.1.6&nbsp;&nbsp;&nbsp; <span>Page-New, Page-Remove and Remove=
+ </span></h5>
+<h5 id=3D"DevelopmentGuidelines/Standards-.5"><span>&nbsp;</span></h5>
+<p><span>The Page-New method is used to create a new page on the clipboard.=
+ This new page may be a top-level page or an embedded page.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Any new page created in an activity must be removed using the Page=
+-Remove method in the same activity. For data transform rules, use the Remo=
+ve method to remove a page.</span></p>
+<p><span>&nbsp;</span></p>
+<p>From PRPC version 7.x introduces data pages which negates the need to cr=
+eate a new page.</p>
+<h5 id=3D"DevelopmentGuidelines/Standards-.6"><span>&nbsp;</span></h5>
+<h5 id=3D"DevelopmentGuidelines/Standards-.7"><span>&nbsp;</span></h5>
+<h5 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.7RDB-SaveVs.Obj-Save">1.=
+3.13.1.7&nbsp;&nbsp;&nbsp; <span>RDB-Save Vs. Obj-Save</span></h5>
+<p><span>&nbsp;</span></p>
+<p>As a general rule of thumb we should always be using Obj methods to pers=
+ist records into the database. This ensures transactional integrity.</p>
+<p><br></p>
+<p>Using an Obj method if PRPC encounters an error at any point of the tran=
+saction, then the entire transaction gets rolled back, if everything goes t=
+hrough successfully then PRPC issues a commit to persist the entire transac=
+tion.</p>
+<p><br></p>
+<p>Using an RDB call to persist breaks this integrity as RDB methods perfor=
+m an implicit commit and hence further downstream in the same transaction i=
+f PRPC encounters an error and issues a rollback then PRPC side of transact=
+ion would rollback whereas the RDB call would have been persisted.</p>
+<p><strong><span>&nbsp;</span></strong></p>
+<p><strong><span>&nbsp;</span></strong></p>
+<h5 id=3D"DevelopmentGuidelines/Standards-1.3.13.1.8Obj-BrowseVs.RDB-List">=
+1.3.13.1.8&nbsp;&nbsp;&nbsp; <span>Obj-Browse Vs. RDB-List</span></h5>
+<p><span>&nbsp;</span></p>
+<p><span>Similar to the previous example we must use Obj-Browse method to r=
+etrieve records from the database.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Where a SQL requires data to be retrieved from multiple tables the=
+ use of a database view should be given due consideration including the pxO=
+bjClass and pzInsKey in the view definition</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>If however an RDB call is still required then it needs to be agree=
+d with the lead developer.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Due consideration needs to be given to the number of records fetch=
+ed. If the number required is more than 1000 then the unit testing should i=
+nclude PAL results as mandatory requirement and ensure that there are no PE=
+GA0004, PEGA0005, PEGA0007, PEGA0025 alerts in the alert log file.</span></=
+p>
+<p><span>&nbsp;</span></p>
+<h1 id=3D"DevelopmentGuidelines/Standards-2.Rule-SpecificCodingStandards">2=
+.&nbsp;&nbsp;&nbsp; <span>Rule-Specific Coding Standards</span></h1>
+<h2 id=3D"DevelopmentGuidelines/Standards-2.1Activities">2.1&nbsp;&nbsp;&nb=
+sp; <span>Activities</span></h2>
+<p><span>Activities should not exceed 20 steps in length including sub-step=
+s. Where appropriate modularise activities.</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.1StepDescriptions">2.1.1&nbsp=
+;&nbsp; <span>Step Descriptions</span></h3>
+<p><span>It is important to provide a clear description of each step within=
+ the activity, so other developers can easily identify its function. The ac=
+tivity step description for each step is therefore mandatory, should be mea=
+ningful and describe all functions of the step. Be as clear and concise as =
+possible. Although the text area for step descriptions is small, the full t=
+ext can be seen by hovering over it, so there is no need to limit the descr=
+iption to what can be seen just in the box.</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.2CommentingoutSteps">2.1.2&nb=
+sp;&nbsp;&nbsp; <span>Commenting out Steps</span></h3>
+<p><span>Commenting out code steps in an activity should only be used durin=
+g development and testing of the rule. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Before the rule is delivered for any code drop, remove any steps t=
+hat are commented out. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Comment only steps are allowed to support ease in reading or struc=
+turing of the activity.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.3WorkObjectStatus">2.1.3&nbsp=
+;&nbsp; <span>Work Object Status</span></h3>
+<p><span>Do not use the Property-Set method in an activity or in Connector =
+Properties to change a work object status. Instead, you must call the stand=
+ard =E2=80=98Work-.UpdateStatus=E2=80=99, which changes the status directly=
+, and calls standard activities: =E2=80=98RecalculateAndSave=E2=80=99 and =
+=E2=80=98Resolve=E2=80=99 as appropriate. All statuses should start with Ne=
+w, Open(-), Pending(-) or Resolved-.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.4Pre-ConditionsandTransitions=
+">2.1.4&nbsp;&nbsp;&nbsp; <span>Pre-Conditions and Transitions</span></h3>
+<p><span>If you have content in the step pre-conditions or transition, the =
+check-box must be ticked. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>If the step pre-conditions or transition is empty, the check-box m=
+ust be un-ticked.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.5PagesandClasses">2.1.5&nbsp;=
+&nbsp;&nbsp; <span>Pages and Classes</span></h3>
+<p><span>Ensure no redundant pages and classes are left in after developmen=
+t.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Ensure that when referencing existing pages, you know that they wi=
+ll be there at runtime. i.e. don=E2=80=99t reference the OperatorID page if=
+ the activity could be used by an agent.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>$None, $CLASS and $Any should not be used.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.6Parameters">2.1.6&nbsp;&nbsp=
+;&nbsp; <span>Parameters</span></h3>
+<p><span>Ensure no redundant parameters are left in after development.</spa=
+n></p>
+<p><span>&nbsp;</span></p>
+<p><span>Don=E2=80=99t use a parameter unless it is being passed in or out =
+of the activity, if not consider using a local variable instead.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Parameter names should make sense for the context in which they ar=
+e used. Parameter names should be meaningful. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Description and type should be filled in.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.7LocalVariables">2.1.7&nbsp;&=
+nbsp;&nbsp; <span>Local Variables</span></h3>
+<p><span>Local variable names should be meaningful. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Description and type should be filled in. </span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.8StepPages">2.1.8&nbsp;&nbsp;=
+&nbsp; <span>Step Pages</span></h3>
+<p><span>Unless in exceptional circumstances ensure that Step Page is the s=
+ame class (or derived class) as the activity it is calling. </span></p>
+<p><span>Ensure the temporary clipboard pages are removed at the end of an =
+activity.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.9PopulatingProperties">2.1.9&=
+nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Populating Properties</span></h3>
+<p><span>Don=E2=80=99t use a property simply to pass a value around, use a =
+Parameter or local variable instead.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>If using a business property (e.g. defined in the Data Dictionary)=
+ only use the property for its intended purpose.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.10ExplicitCommit">2.1.10&nbsp=
+;&nbsp;&nbsp; <span>Explicit Commit</span></h3>
+<p><span>Never use the Commit method directly in an Activity.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>Calling the out of the box Activity: =E2=80=98CommitWithErrorHandl=
+ing=E2=80=99 is acceptable, as this commits when no errors, and rolls back =
+when errors occur, enabling error details to be trapped.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.11ActivityType">2.1.11&nbsp;&=
+nbsp;&nbsp; <span>Activity Type</span></h3>
+<p><span>Ensure the correct Activity type (found on the security tab) has b=
+een used.</span></p>
+<p><span>&nbsp;</span></p>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.1.12Security">2.1.12&nbsp;&nbsp=
+;&nbsp; <span>Security</span></h3>
+<p><span>&nbsp;</span></p>
+<p><span>For Activity rules use the Security tab to specify the activity ty=
+pe and optionally to restrict which users (or other requestors) can execute=
+ the activity. This optional security supersedes and replaces restrictions =
+based on RuleSet and version. You can specify zero, one, or more than one p=
+rivilege to restrict access. Order is not significant. At runtime, any matc=
+h between a privilege listed and those a user possesses allows users to exe=
+cute this rule.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-2.2DecisionRules">2.2&nbsp;&nbsp;=
+&nbsp; <span>Decision Rules</span></h2>
+<h3 id=3D"DevelopmentGuidelines/Standards-2.2.1Functionchanges">2.2.1&nbsp;=
+&nbsp; <span>Function changes</span></h3>
+<p><span>If changing the function of a decision rule (from a previous versi=
+on) e.g. from =E2=80=98IsTrue=E2=80=99 to =E2=80=98IsFalse=E2=80=99, do not=
+ update the existing rule, instead create a new rule to fit the purpose and=
+ reference this instead.</span></p>
+<p><span>&nbsp;</span></p>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-2.3DeclareIndex">2.3&nbsp;&nbsp;&=
+nbsp; <span>Declare Index</span></h2>
+<p><span>Do not modify (e.g. by Property-Set , Obj-Save methods or direct d=
+atabase updates) instances in a class derived from the Index-base class. Us=
+e only Declare Index rules to change these properties and instances. </span=
+></p>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-2.4Flows">2.4&nbsp;&nbsp;&nbsp;&n=
+bsp; <span>Flows</span></h2>
+<p><span>When creating flows, do not have more than 15 shapes. This will ca=
+use a Pre-Flight warning. Consider breaking the flow into sub-flows instead=
+. Use the Process Modeller to build all new flows.</span></p>
+<p><span>Do not forget to switch off the Draft Mode when the development is=
+ completed.</span></p>
+<p><span>&nbsp;</span></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-2.5Function">2.5&nbsp;&nbsp;&nbsp=
+; <span>Function</span></h2>
+<p><span>Do not write a function unless agreed as part of the design.</span=
+></p>
+<p><br></p>
+<h2 id=3D"DevelopmentGuidelines/Standards-2.6Agents">2.6&nbsp;&nbsp;&nbsp; =
+<span>Agents</span></h2>
+<p><span>Any new Agent Rules should not use Developer Access Groups.</span>=
+</p>
+<p><span>&nbsp;</span></p>
+    </div>
+</body>
+</html>
+------=_Part_1412_1527595338.1584719784188
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/d89edaaa43d3d4e65e736d4d4c32ef8e
+
+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
+umDwQUREREREumDwQUREREREumDwQUREREREumDwQUREREREumDwQUREREREumDwQUREREREumDw
+QUREREREurCKi4uTtP4ccXBw0PqIiIiIiIiyxicfRERERESkCwYfRERERESkCwYfRERERESkCwYf
+RERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERE
+RESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESk
+i2cTfEQFo5mVFazMOtsyDeA3aTMuJ2nzEBERERHRc+XZPvlwfxcjRowQ3QC0LnMRISNboWbrYJxP
+0aY/D1L2Y1QZKwwJ1YaJiIiIiF5Qzzb4eHMgvvrqK9F9g58jTuK7VkByaBB+jNCmPwdSwjdgQaw2
+QERERET0Ass773xYv4zX/LxETyyOXb6ljku4gN8m+cGzWhnYKs2z7FHRNwjbrpoejUQFNxPjhyA0
+5Sq2Bb2OMrZivo6rIK8h5kAwBvvWQEV7U9Ou3sERuKMuKkQhuJmYNnAzrv8+Cb4V7bX5XkfQtqtI
+uROB4N61Ya/9du3ewYgwLSzcQcTywcblrOwrwjdoGwybF7X2A9T0nij2CJj5hroNVs2Cxa+q7kQs
+F9tX0bj+nOxb6mWtYF/RE37TwpRpRERERER5UZ564Tw+5rzyv3OZssr/sE/BpQ3n4eQ7Eou3bEHI
+rFZ4aetk+HhNwqFUTbMOY353L/jMuYgqrXuiY4tKkNdgd/cofk5ugv5fh2DLFlFZr3gG3/dtCv9V
+MepiBj/9H+q9tQYO3QdgxIB3UDFhNyb7eKFm4xb4Kq4FBowYgZ5NgNPf90X7+Ue1hVJwPrgTmnZf
+gKgWExAitm/5oErYP9kHXsNDlQDHtmpPjPF3VeZuM2WL2AbRTWkBR3np88Ho1LQ7FkS1wIQQMX75
+IFTaL+/bcISmCnAy2LeETRgulv3fWTd8vlwsG7IQI1oWxvm/rVFKW4qIiIiIKM+Ji4uTctM9losL
+JS9AQsBOdfhBgnQ+dJzkbSPG2fhLG++ro9O7L/3aQ8wDL2nhRXXMxYVeYliMqxQg7YxXx1l0fJok
+QgHT70oXpYVe8vocpYCdph89Ps1VXed7P0vGVd7/Veohj/NaKJaShzdK/vL2tlomXVNmkD2QdgbY
+iGW9pcWX1TGG7TP+pOK+tNFfnq+VtMy0sPRgZ4BkI+b11ha2uG/a8Ss+PEz8IhERERFR/vBsn3zM
+fENtilTIHi7eYxCK+hgbOhWt7LXp6dijqIPWm0aHaZ/DO6vb/kVLoLTWm9rbeLOh6UeLllDn8mpZ
+x/Qkwb4oUv30sVAsSwaK39+O/33+OT5XutFYeVxeTyhOXFZny9gxhKoLY/v/DMt+jtErj4s9FEun
+WTjdvlWug7cqAfenvgWn14MQcvw6+JEwIiIiIsrr8sbXriYsRMjuY4i5dxRjmprVsu+cRYj8zkcN
+07sNb8zUpqVhbKpllIKre9R3PqqVsVWDnGp9sVebmpoDiloMeCx4lAIRPiDpwu9Yt26dsdt9vRRc
+XV1R2kadLWOPkKIujN/Nll23+zpKiWVd0yycbt+sGyMo/DAW9qqGpN2T4VfPCSWqfYDg1C+kEBER
+ERHlKXnja1cj+6BD87qoYKuNV5zB7NdrwW9kOJwHLMLvl2/gxo0bCOmrTc5Cwqb+qP5aXyyIbYcv
+fz2mLHsjfDoaa9MfWwFryCGC/cAVOHfuXLpu5KvqbBkrAGt1YazIYNlzmS+ssC7jgT7fnUJ8wnls
+muiDMlEr0Nf3a+x/nj5TTERERETPlTz1wnkqUfuw+qT43+sLTBrsi7rO5VCuXCFICerkrBzZukh5
+MtH/v1PRzbOGWLYcHF5KwX118uOr543uIoCI/WYJtmXjgcODh+ZRQT14qwtjSXYWzoS1XXW8HfQb
+Fg0QA7G7cPqKOp6IiIiIKK/Ju8FHZTe8Ln8WKvwrfDF7HbZuXYFJbRvjPxvt1OlZcPFopfy/KCgI
+K7ZuxbrgwWjuOwnXU7doyj37lhg+xxs2sXPRtnFbBAWLbVwXjIkD/dCg/XfGz+lWdntd+brVXP93
+MClYTJ8jfw7XHi2Hz4G3TSzmin1qGxSMdVvXIXjiQPg1aI/vDAtbEhWMt2v7YeCsFeK4qPs2YpEY
+794Fr1ZVZyEiIiIiymvybvBh3RSfblmIXtVuY8UnHeHbaRLCWy7FuT1fQP14beacunyLrYEtYBsx
+GR/4tsNHy4DP90RjRRdthsdmDZc+G3F200S0tj+Ir/uKbezYF1PWx8DZx00JOJS5mn6K9RNbwPH2
+VozsOwizdl3HP/J4lz7YeHYTJra2x8Gv+6Kjb0f0nbIeMc4+cDMsbEkxF3g6ncBPIz6Ar68vOg5a
+C7SeibDt/VFLm4WIiIiIKK+xkj+bq/XniIODhc9OERERERERZSDvPvkgIiIiIqLnCoMPIiIiIiLS
+BYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMP
+IiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLShVVcXJyk
+9efIgwcPtD4iIiIiIqKs5Tr4cHBw0PqIiIiIiIiyxmZXRERERESkCwYfRERERESkCwYfRERERESk
+CwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYf
+RERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERE
+RESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESk
+CwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYf
+RERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRPQcSsHt02HYevAy
+krQxjyvp8kFsDTuN2ynaCCKifOLpl18xOLZ1K7Zu3YsLCdooesGlIPGCSHdKuhDdwQtI1NLfcx58
+7MPEGjVQQ+48xyIsTYaIXtlNmdZtZbQ2hoiyZpav5M63Fz7/fCKCtxzH9SdV039cf29HUO0W8G1S
+E1+EaeMeyxksaN8Evi1q4/1lLC/oacgH+YqyIfV59PQbKM7jLKwwq3jpT4/y6zyW+PrC13cEdsdq
+o/KAfRO1czFxnzYm52LW9lbW4bf0ojZGVKtvh2N5kB88jefaF71mheB0Pr47ZTxWhv35/HNMDN6C
+47ksgO6EDoebi0h3SroQXdsVOGutTYyLi5Ny0+UPO6UAQBK7qXTu045LD7QpsosLvZTxXgsvamOI
+KGup81Wqzq6JNHFfvDbfs3RRWtOrseTqM1HK6eZcW9ZK7IuXlLpYuC8dnOojuTbuJa2MNC9FiJ6U
+J5+vMk7LufMk1/V8s3we7XyXipLpWdCj/DLsd95KIzsDtOMfsFMbk1OnpVnu8jrcpVmn1THx+8ZK
+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
+Xz7JPGNt52g5n1vbwbFc9i+o8rqYn0lf6nUkyzqKhbSspNmcVnDSrEuuKN2MPoDpPfxF4AHY+H+M
+tlm8opFpvpNloyx43ijnwmJ5k83zrBy3Jxt4yJRy1+J6bVEyB+Xkcym76TWb50c53vkq8eemPmvL
+4IOIiIhybv+X5VG+SlMMkxuFVwrApqmtMv0kNhGRrMDw4cPHav05UqRIEa2PiCjvS/nzbxQoWwfN
+mryKlrXKaGOJKLf+/dcahSs1QucB/8Xcuf6ob6dNMMN89ySl4M+/C6BsnWZo8mpL8HBSfsV3PoiI
+iIiISBdsdkVERERERLpg8EFERERERLpg8EFERERERLpg8EFERERERLpg8EFERERERLpg8EFERERE
+RLpg8EFERERERLpg8EFERERERLpg8EFERERERLpg8EFERERERLpg8EFERERERLpg8EFERERERLpg
+8EFERERERLpg8EFERERERLpg8EFERERERLqwiouLk7T+HHFwcND68p4jR45ofURERERElFfoHnww
+MCAiIiIiejE9l08+ziY81PqIiIiIiCiv4DsfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERE
+RESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESkCwYfRERERESk
+CwYfRERERESkC6u4uDhJ688RBwcHrS/vOZvwUPn/r/PHlP+JyLKiLvW0vuxhviLKWqMfPJT/z0xQ
+r0dZ+fvCca2P8osi1etqfSYv8nnM6Hg8Sy/CuXhSx1zv6/pzH3x4eKgXACJKLzw8PFfBB/MVkWVy
+vspN8NGwYUNtiPK6I0eOWAw+XsTzaOl4PEvP+7l4ksdc7+s6m10REREREZEuGHwQERHRC+Hy5cuP
+3RHR42HwQUREREREumDwQUREREREumDwQUSPzcrKSusjIiIisozBBxERERER6YLBBxERERER6YLB
+BxERERER6YLBhx5ijmHr3gtI0AaJ6MlKSYzFzdhEpGjDeVrCBezdegwx2mCGUhIRezMWiflih7In
+5thW7L3AUpCI6EWX94KPlKv4bUA12FoNQag26kkKbmaFjqtuaUOaW6vQ0SqD8TiB6TWs8H+/PeYF
+8/wS+I7YjVhtMJ3QIcoLu8bOviI8/SZh29XnqOZBz7mqSt5qFhylDZuLUqYNeRoZWnNlVUeU77gK
+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
+RMh7Zu1LnzsJCBteG0GlfsbPn5negUi6/hs+q9cJRdckYWpzdZwe5HzV6Ac1j5yZoF6PsvL3heNo
+2LChNvSU8FqBy5cva325V6VKFeVdiCLVTQ2kDHQ5j3mQpePxLD3v5+JJHnO968sv7JOP50lU6CKE
+vtvbdDGRWduhRg2RKB88Qqr314joxREVhmXH/fFRq+c58JAdQci0yujV2ezla8G2ggvcqxi+ikS8
+VhBRXsDg4zng6FQDNmuXG9thK+1dz23GyBGL4N7l1Wx9oYSInjNJZzBf/hsQgR+hZbbfx8ivyqKK
+ezhWhBjeN5Jv6F/FgeDRmCSCL58X70Z0hnitIKK8gMHHc8C+1VTs/+IRvtLaYSvtXd+ZgaTP9mPX
+4DQvmRLRcy4Kwc1EOVC4Cea8vATbc/o+Rr5UC/03/Iom27pr7xvJbeOb4pONdbHowjztfSLitYKI
+8gIGH8+FUqjf5zscvJagfttcSsLti/L3302fmSR6mvi+h768Z0iZvO9RFX32qJ9RPfXde8Y/VPq8
+s670FiZtuYjbSfK+iy7hGg7+HGT2GVnitYKI8gIGH0REREREpAsGH0RERPRCkL9U9bgdET0eBh9E
+RERERKQLBh9ERERERKSL5/6PDBJR5nLzRwaJKHO5+SODlL9Y+iODL6q8+EcGn3dP8o8M6um5Dj6I
+iIiIiCjvYLMrIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIi
+IiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLSBYMPIiIiIiLShVVcXJyk9eeI
+g4OD1pczR44c0fqIiIiIiOhFonvwQURERERELyY2uyIiIiIiIl0w+CAiIiIiIl0w+CAiIiIiIl0w
++CAiIiIiIl0w+CAiIiIiIl0w+CAiIiIiIl0w+CAiIiIiIl0w+CAiIiIiIl0w+CAiIiIiIl0w+CAi
+IiIiIl1YxcXFSVp/jjg4OGh9T8AD4PJpYP0l4EwicEMMFy8MvFISaOUGNKwCFNJmJSIiIiKi/OmZ
+Bx+JIuCYvksEHCLQ+KAGULMsYK1Nux0FrD0PHCsIjPEF3EpoE4iIiIiIKN95psHH/VNAwCHArznQ
+qhogYowMXToAjD8jghMfoGVFbSQREREREeUrz+ydj4fXgIkiqOgqAoq2mQQesleaABPcge93Aqf+
+0kYSEREREVG+8syCjz2HgHIegE/aJxkiuNi+F7inDRo4NQKGlgG+jdBGEBERERFRvvJsgo8rwNp/
+gA61tWFzCcDWGEBMTqdeLfHPReBfdZCIiIiIiPKRZxJ83L4B3K0AvJJZW6uMVAbesBbBB6MPIiIi
+IqJ855kEH/f+BioU1gZkicCpk0CE3F0FElKAc4Zh0cVrs8kqFgdy9YY8ERERERE9U8/snY9UkoFL
+t4ATcicijT9F8HHGMBwHJD3U5iMiIiIionzrmQQfJYoA181f6igNtGsJ9JS7ekAFMd3PMOwNOJk1
+z7p2H7DS+omIiIiIKP94JsFHmbJAsetAtDacbTeA/Slio/PG8xoiIiIiIsqBZ1ONdwb8rIGfj2nD
+5uyBeiUA81dCDE6cBP55Ja+0FSMiIiIiopx4ZvX4N+oDJ8OBrde0EQZFgW4+gIg/Ukk8A8y4Cfyn
+oTaCiIiIiIjylWcWfBSsrv7V8uCdwK4r2kgLbkUAg/cBXd8AaovghIiIiIiI8h+ruLi4XH251sHB
+Qet7PHGngK8OAf+UBfxrAVVKAyXtxPB94KYISradATY/AAJ9gUZltIWIiIiIiCjfeebBh0IEFyeP
+Ar/+ARwTQYfyIayCgFNxwK8m8JoLUDinf5CQiIiIiIjylLwRfBARERER0XOPH44iIiIiIiJdMPgg
+IiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIi
+IiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJd
+MPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdMPggIiIiIiJdWMXF
+xUlaPxERERER0VPDJx9ERERERKQLBh9ERERERKQLBh9ERERERKQLBh9ERERERKQD4P8Bl1N8RWCi
+DhIAAAAASUVORK5CYII=
+------=_Part_1412_1527595338.1584719784188
+Content-Type: application/octet-stream
+Content-Transfer-Encoding: base64
+Content-Location: file:///C:/bec57969c64599be8eb6e5fa0d780615
+
+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
+/g925fPLccVfgQAAAABJRU5ErkJggg==
+------=_Part_1412_1527595338.1584719784188--

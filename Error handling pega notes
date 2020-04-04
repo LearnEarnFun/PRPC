@@ -2,3 +2,10 @@ notes
 
 https://collaborate.pega.com/question/error-there-has-been-issue-please-consult-your-system-administrator
 https://collaborate.pega.com/question/pega-716-display-user-friendly-message-all-errorsexceptions-thrown-pega-ui
+
+
+Location of error handling jsp
+
+tomcat\extracted war\prweb\prweb\diagnostic
+error.jsp
+status.jsp
